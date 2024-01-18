@@ -325,11 +325,8 @@ void _trackAdRevenueWithAdCustomModel(char * jsonpara){
         customModel.extraData = @{kMTG_u_p_v:dics[kMTG_mBridge_Version]};
     }
   
-    if(mtg_check_nsstring(dics[kMTG_mBridge_Version])){
-        customModel.extraData = @{kMTG_u_p_v:dics[kMTG_mBridge_Version]};
-    }
-  
     [MTGTrackAdRevenue trackAdRevenueWithAdRevenueModel:customModel];
+ 
 }
     
 }
