@@ -34,9 +34,10 @@ public class MBridgeRevenueManager
 #if UNITY_IOS || UNITY_IPHONE
         _trackAdRevenueWithAdCustomModel(json);
 #elif UNITY_ANDROID
+        MUnityDataSendBridge.getInstance().trackAdCustom(json);
 #endif
-       
-       
+
+
     }
    public static void Track(MBridgeRevenueParamsEntity mBridgeRevenueParamsEntity)
     {
