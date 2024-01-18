@@ -595,6 +595,7 @@ public class IronSourceDemoScript : MonoBehaviour
         adData.IsBidding = true;
         adData.DspId = "123";
         adData.DspName = "test";
+        
         Dictionary<string, object> dic = new Dictionary<string, object>();
         dic.Add("instanceId",impressionData.instanceId);
         adData.AdNetworkUnitInfo = dic;
