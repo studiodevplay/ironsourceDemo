@@ -245,7 +245,7 @@ void _trackAdRevenueWithAdCustomModel(char * jsonpara){
     if (jsonpara == NULL)
         return;
     if(debug)
-        NSLog(@"ROAS _trackAdRevenueWithAdRevenueModel %s",jsonpara);
+        NSLog(@"ROAS _trackAdRevenueWithAdCustomModel %s",jsonpara);
     NSString*string=[[NSString alloc] initWithUTF8String:jsonpara];
     
     NSData *jsonData = [string dataUsingEncoding:NSUTF8StringEncoding];

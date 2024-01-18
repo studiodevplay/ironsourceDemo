@@ -586,12 +586,15 @@ public class IronSourceDemoScript : MonoBehaviour
         adData.AttributionPlatformName = MBridgeRevenueParamsEntity.ATTRIBUTION_PLATFORM_UMENG;
         adData.AttributionPlatformUserId = "12";
         adData.MediationUnitId = "testInstanceid";
-        adData.MediationName = "ironsource";
+        adData.MediationName = "MediationName_ironsource";
         adData.Revenue = impressionData.revenue;
         adData.Precision = impressionData.precision;
         adData.AdNetworkName = impressionData.adNetwork;
         adData.Currency = impressionData.country;
-      
+        adData.AdType = impressionData.adUnit;
+        adData.IsBidding = true;
+        adData.DspId = "123";
+        adData.DspName = "test";
         Dictionary<string, object> dic = new Dictionary<string, object>();
         dic.Add("instanceId",impressionData.instanceId);
         adData.AdNetworkUnitInfo = dic;
